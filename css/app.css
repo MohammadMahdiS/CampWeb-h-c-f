@@ -1,0 +1,156 @@
+html {
+    box-sizing: border-box;
+    /* font-size can be with percent and specify size that mean in percent font can be change with browser setting fontsize if user
+                 want to see text larg or small size but if specify font size it can not be change with browser changed */
+    /* font-size: 62.5%; */
+    font-size: 10px;
+}
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-family: 'Roboto';
+}
+
+/*
+
+1rem = 10px
+
+*/
+
+h1 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+/*
+
+container
+
+*/
+
+.container {
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 576px) {
+    .container {
+        width: 54rem;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 72rem;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 96rem;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 114rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 137rem;
+    }
+}
+
+.content {
+   
+}
+
+
+/*
+
+-- Reset Style --
+
+*/
+
+a {
+    text-decoration: none;
+}
+
+/*
+
+-- Helper Class --
+
+*/
+
+
+/*
+
+-- App Style --
+
+*/
+
+.header {
+    background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url(../image/header-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav {
+
+}
+.app-logo {
+
+}
+.app-log__img {
+
+}
+.menu {
+    display: none;
+
+}
+.menu__item {
+
+}
+.menu__link {
+
+}
+.nav-menu {
+    display: none;
+}
+.mobile-menu {
+
+}
+.nav-menu__links {
+
+}
+.nav-menu__link {
+
+}
+.nav-menu__link--border {
+
+ }
+.header__links {
+    display: none;
+}
+.header__link {
+
+}
+.header__link--border {
+
+}
+.nav__btn {
+    background-color: #fff;
+    width: 5rem;
+    height: 5rem;
+}
+.nav__btn-line {
+
+}
