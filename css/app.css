@@ -56,6 +56,29 @@ a {
 
 */
 
+/*
+
+-- Component  --
+
+*/
+.btn {
+    border-radius: 10rem;
+    display: block;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    color: var(--white);
+    background-color: var(--dark);
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Roboto Medium";
+}
 
 /*
 
@@ -67,10 +90,16 @@ a {
     background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url(../image/header-bg.png);
     background-position: center;
     background-size: cover;
-    min-height: 55rem;
+    min-height: 82vh;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
+
+/*
+
+-- Nav Style --
+
+*/
 
 .nav {
     display: flex;
@@ -83,6 +112,12 @@ a {
     align-items: center;
  }
 
+/*
+
+-- App Logo Style --
+
+*/
+
 .app-logo {
     display: block;
     width: 5.5rem;
@@ -93,6 +128,13 @@ a {
     width: 100%;
     height: 100%;
 }
+
+/*
+
+-- Main Menu Desktop Style --
+
+*/
+
 .menu {
     display: none;
 
@@ -143,6 +185,12 @@ a {
     margin: 0 auto;
 }
 
+/*
+
+-- Navigation Menu Style --
+
+*/
+
 .nav-menu {
     position: fixed;
     top: 0;
@@ -161,6 +209,13 @@ a {
     left:0;
 }
 
+/*
+
+-- Mobile Menu Style --
+
+*/
+
+
 .mobile-menu {
     margin-bottom: 2.5rem;
 }
@@ -173,9 +228,16 @@ a {
 
 }
 
+/*
+
+-- Nav Links Style --
+
+*/
+
 .nav-menu__links {
     display: flex;
 }
+
 .nav-menu__link {
     color: var(--white);
     border: 1px solid var(--white);
@@ -189,18 +251,24 @@ a {
 
  }
 
-.header__links {
+ /*
+
+-- Nav Links Style --
+
+*/
+
+.nav__links {
     display: none;
 }
 
-.header__link {
+.nav__link {
     color: var(--white);
     font-family: "Roboto Medium";
     margin-left: 2.5rem;
 
 }
 
-.header__link--border {
+.nav__link--border {
     border: 1px solid var(--white);
     padding: 1rem 2.5rem;
     border-radius: 10rem;
@@ -215,10 +283,16 @@ a {
     -o-transition: all 100ms ease-in;
 }
 
-.header__link--border:hover {
+.nav__link--border:hover {
     background-color: var(--white);
     color: var(--dark-text);
 }
+
+/*
+
+-- Nav Button (Hamberger Menu) Style --
+
+*/
 
 .nav__btn {
     background-color: var(--white);
@@ -296,4 +370,36 @@ a {
     -moz-transform: translateY(-8px) rotate(-45deg);
     -ms-transform: translateY(-8px) rotate(-45deg);
     -o-transform: translateY(-8px) rotate(-45deg);
+}
+
+/*
+
+-- Header Content Style --
+
+*/
+
+.header__content {
+    color: var(--white);
+    text-align: center;
+    margin-top: 6rem;
+
+}
+.header__content-title {
+    font-family: "Archivo Black";
+    font-size: 4.5rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+.header__content-caption {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.header__content-link {
+    background-color: var(--orange);
+    padding: 2rem;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
