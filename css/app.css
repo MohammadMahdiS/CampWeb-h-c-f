@@ -90,7 +90,7 @@ a {
     background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)), url(../image/header-bg.png);
     background-position: center;
     background-size: cover;
-    min-height: 82vh;
+    min-height: 85vh;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
@@ -196,7 +196,7 @@ a {
     top: 0;
     left: -25rem;
     bottom: 0;
-    width: 22rem;
+    width: 24rem;
     background-color: rgb(75, 75, 75);
     padding: 2.5rem;
     transition: all 250ms ease-in-out;
@@ -209,6 +209,15 @@ a {
     left:0;
 }
 
+.nav-menu__title {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: "Archivo Black";
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 /*
 
 -- Mobile Menu Style --
@@ -225,9 +234,35 @@ a {
 
 .mobile-menu__link{
     color: var(--white);
+    position: relative;
+    transition: all 250ms ease-in-out;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+}
+
+.mobile-menu__link::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: 0.3rem;
+    background-color: var(--orange);
+    transition: all 250ms ease-in-out;
 
 }
 
+.mobile-menu__link:hover {
+    padding-left: 2.2rem;
+}
+
+.mobile-menu__link:hover::before {
+    width: 1.5rem;
+}
 /*
 
 -- Nav Links Style --
@@ -245,7 +280,16 @@ a {
     padding: 1rem;
     flex-grow: 1;
     text-align: center;
+    transition: all 100ms ease-in;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    -ms-transition: all 100ms ease-in;
+    -o-transition: all 100ms ease-in;
+}
 
+.nav-menu__link:hover {
+    background-color: var(--white);
+    color: var(--dark);
 }
 .nav-menu__link--border {
 
@@ -388,11 +432,14 @@ a {
     font-family: "Archivo Black";
     font-size: 4.5rem;
     line-height: 1.2;
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem auto;
+    max-width: 35rem;
 }
 .header__content-caption {
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem auto;
+    max-width: 34rem;
+
 }
 .header__content-link {
     background-color: var(--orange);
