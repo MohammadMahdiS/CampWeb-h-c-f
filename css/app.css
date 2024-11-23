@@ -3,6 +3,7 @@
     --white: #fff;
     --white-grey-text: #D2D2D2;
     --dark-text: #3B3735;
+    --app-bg: #FAF4F2;
     --primary-font: "Roboto", Arial, Helvetica, sans-serif;
     --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
     --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
@@ -23,6 +24,7 @@ body {
     line-height: 1.6;
     font-size: 1.6rem;
     font-family: var(--primary-font), var(--secondary-font);
+    background-color: var(--app-bg);
 }
 
 /*
@@ -452,4 +454,54 @@ a {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+}
+
+/*
+
+-- Main Style --
+
+*/
+
+/*
+
+-- Service Style --
+
+*/
+.main {
+    padding: 4rem;
+
+}
+.services {
+    margin-top: -20rem;
+   
+}
+.service {
+    background: var(--white);
+    margin-bottom: 2rem;
+    /* width: 36rem; */
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    padding: 0 4rem;
+    color: var(--dark);
+}
+.service__img {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+}
+.service__title {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin: 1.5rem 0 0.8rem 0;
+}
+.service__caption {
+
 }
