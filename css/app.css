@@ -473,17 +473,19 @@ a {
 }
 .services {
     margin-top: -20rem;
-   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .service {
-    background: var(--white);
+    background-color: var(--white);
     margin-bottom: 2rem;
-    /* width: 36rem; */
+    width: 32rem;
     height: 26rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
@@ -491,11 +493,16 @@ a {
     -o-border-radius: 2rem;
     padding: 0 4rem;
     color: var(--dark);
+    flex-grow: 1rem;
+    /* margin-right: -1rem;
+    margin-left: -1rem; */
 }
 .service__img {
     display: block;
     width: 10rem;
     height: 10rem;
+   
+
 }
 .service__title {
     font-family: var(--secondary-font);
