@@ -523,6 +523,7 @@ a {
 
 .destinations {
     text-align: center;
+
 }
 .destinations__logo {
 
@@ -542,6 +543,7 @@ a {
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
     padding: 3rem;
+    margin-bottom: 2rem;
 }
 .destination__box {
 
@@ -606,13 +608,19 @@ a {
 
 }
 .destination__box-title {
+    font-family: var(--secondary-font);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 
 }
 .destination__box-caption {
+    margin-bottom: 2rem;
 
 }
 .destination__box-link {
-
+    color: #8D8D8D;
+    background-color: rgba(141, 141, 141, 0.1);
+    
 }
 
 
